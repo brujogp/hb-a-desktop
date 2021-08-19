@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "heroclixbible",
+    "heroclixbiblemobile": "heroclixbiblemobile"
+  },
+  "targets": {
+    "heroclixbible": {
+      "hosting": {
+        "m": [
+          "heroclixbible",
+          "m-heroclixbible"
+        ]
+      }
+    }
+  }
+}

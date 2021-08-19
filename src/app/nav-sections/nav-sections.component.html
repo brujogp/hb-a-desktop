@@ -1,0 +1,6 @@
+<button class="menu-nav" [attr.style]="showMenu  ? ['position: fixed'] : ['position: relative']">
+  <i (click)="toggleMenu()" [ngClass]="showMenu ? ['fas', 'fa-times'] : ['fas', 'fa-bars'] "></i>
+</button>
+
+<app-list-sections (onStatusChange)="toggleMenu()" #menuNav
+                   [@showMenuTrigger]="showMenu ? 'show' : 'not-show'"></app-list-sections>

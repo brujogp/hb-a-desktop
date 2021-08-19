@@ -1,0 +1,16 @@
+<div class="container">
+  <!--
+  <h2 class="slogan">Un conglomerado del universo Heroclix</h2>
+  <div class="flex-container">
+    <a routerLink="/project">¿Qué es Heroclix Bible?</a>
+    <a routerLink="/us">¿Quiénes somos?</a>
+    <a routerLink="/supportus">¿Te gusta el proyecto?</a>
+  </div>
+  -->
+
+  <h2 class="name-section" [innerHTML]="'LOGO' | translate"></h2>
+  <h3 [innerHTML]="'SLOGAN' | translate"></h3>
+
+
+  <button (click)="goto()" class="goto-hb" [innerHTML]="'MESSAGE_BUTTON' | translate"></button>
+</div>

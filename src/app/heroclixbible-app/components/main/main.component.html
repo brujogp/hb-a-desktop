@@ -1,0 +1,16 @@
+<div class="container-app">
+  <div class="container-section">
+    <app-main-list (indexFromList)="sectionClicked($event)" *ngIf="!isLoad"
+                   [elementsListable]="sections"></app-main-list>
+    <mat-spinner class="animate__animated animate__fadeIn" [diameter]="70" [color]="'warn'"
+                 *ngIf="isLoad"></mat-spinner>
+
+    <!--<mat-progress-bar mode="indeterminate" [color]="'warn'" *ngIf="isLoad"></mat-progress-bar>-->
+
+  </div>
+
+  <app-slide-subsections [@showHiddenPane]="showSubsection"></app-slide-subsections>
+  <button class="fab" mat-fab [color]="'warn'" (click)="showFilterVersionDialog()">
+    <mat-icon>filter_list</mat-icon>
+  </button>
+</div>

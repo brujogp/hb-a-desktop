@@ -1,0 +1,10 @@
+<div class="container">
+  <app-show-hidden-button-pane [namePane]="'indices-subsection-pane'"></app-show-hidden-button-pane>
+
+  <p *ngIf="subsectionSelected" class="name-section">{{subsectionSelected.name}}</p>
+  <app-helper-to-list-children (eventNodeSelected)="nodeSelected($event)"
+                               [listItems]="typeSubsection"></app-helper-to-list-children>
+
+  <app-description-node [@showHiddenPane]="showDescriptionPane" *ngIf="paaNodeSelected"
+                        [nodeSelected]="paaNodeSelected"></app-description-node>
+</div>

@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  height: 100%;
+}
+
+app-show-hidden-button-pane {
+  position: absolute;
+  width: 100%;
+}
+
+.name-section {
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+  width: auto;
+  color: white;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 550px) {
+  .name-section {
+    margin: 1rem auto 1rem auto;
+  }
+}
+
+.description-section {
+  color: white;
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  height: 70%;
+  overflow-y: scroll;
+}
+
+@media (max-width: 320px) {
+  .description-section {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 550px) {
+  .description-section {
+    max-height: 30%;
+  }
+}
+
+@media (min-width: 700px) {
+  .description-section {
+    max-height: 50%;
+  }
+}

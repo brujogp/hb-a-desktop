@@ -1,0 +1,11 @@
+<div class="container">
+  <mat-form-field appearance="fill">
+    <mat-label
+      [innerText]="data.instructions"></mat-label>
+    <mat-select ngModel name="version-select">
+      <mat-option *ngFor="let item of data.list; let i = index" [attr.data-index]="i"
+                  (click)="selectVersion(i)" [value]="item.id">{{item.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>

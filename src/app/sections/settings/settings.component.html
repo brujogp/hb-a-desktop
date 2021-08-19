@@ -1,0 +1,20 @@
+<div class="container">
+  <div id="1" class="section-setting" #languageOption (click)="clickSetting(languageOption)">
+    <i class="fas fa-language"></i>
+    <div class="section-container">
+      <h3 [innerHTML]="'LANGUAGE' | translate"></h3>
+      <p class="info-section-settings" [innerHTML]="'LANGUAGE_INSTRUCTIONS' | translate"></p>
+    </div>
+  </div>
+  <hr>
+  <div id="2" class="section-setting" #themeOption (click)="clickSetting(themeOption)">
+    <div class="container-theme-icon">
+      <div class="theme-icon"></div>
+    </div>
+    <div class="section-container">
+      <h3>Tema de la aplicación</h3>
+      <p class="info-section-settings">Selecciona el tema que se usará en la aplicación</p>
+    </div>
+  </div>
+  <hr>
+</div>

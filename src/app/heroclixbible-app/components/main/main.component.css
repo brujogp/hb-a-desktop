@@ -1,0 +1,46 @@
+mat-spinner {
+  text-align: center;
+  margin: 2rem auto 0 auto;
+}
+
+.container-app {
+  position: relative;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.container-section {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  height: 80%;
+  max-height: 80%;
+  overflow-y: scroll;
+
+}
+
+app-main-list {
+  display: block;
+  height: 80%;
+  max-height: 80%;
+  overflow-y: scroll;
+}
+
+app-slide-subsections {
+  height: 100%;
+  background-color: #31425e;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  border-radius: 2rem 2rem 0 0;
+  display: inline-block;
+  opacity: 0;
+}
+
+.fab {
+  position: absolute !important;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 5;
+}
+

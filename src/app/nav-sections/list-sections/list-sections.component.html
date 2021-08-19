@@ -1,0 +1,8 @@
+<div class="container-nav-list">
+  <i class="fas fa-sliders-h settings-icon" (click)="goToSettings()"></i>
+  <h1>Heroclix Bible</h1>
+
+  <a (click)="hiddenMenu()" routerLink="home" [innerHTML]="'HOME' | translate"></a>
+  <a (click)="hiddenMenu()" routerLink="about-heroclixbible" [innerHTML]="'ABOUT' | translate"></a>
+  <a (click)="hiddenMenu()" routerLink="about-heroclixbible-team" [innerHTML]="'HEROCLIX_TEAM' | translate"></a>
+</div>

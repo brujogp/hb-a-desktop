@@ -1,0 +1,6 @@
+<div class="container">
+  <div *ngFor="let itemPaa of listItems; let i = index" [attr.data-index]="i"
+       class="item-paa" (click)="nodeSelected(i)">
+    <img [src]="'https://cdn.heroclixbible.com/images/icons' + itemPaa.iconImageURL" [alt]="itemPaa.name">
+  </div>
+</div>

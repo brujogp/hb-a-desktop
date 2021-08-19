@@ -1,0 +1,7 @@
+<div class="container">
+  <app-show-hidden-button-pane [namePane]="'description-node'"></app-show-hidden-button-pane>
+  <p class="name-section">{{nodeSelected.name}}</p>
+  <div class="description-section for-img"
+       [innerHTML]="nodeSelected.description | surrondWithTag : 'img'">
+  </div>
+</div>

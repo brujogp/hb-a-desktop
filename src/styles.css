@@ -1,0 +1,106 @@
+/* color palett */
+:root {
+  /* colors for home page */
+  --home-page-primary-color-dark: #0a0f28;
+  --home-page-primary-color-light: #829cbc;
+
+  --home-page-button-color-one: #374b66;
+  --home-page-button-color-two: #3d5270;
+  --home-page-button-color-three: #31425e;
+
+  /* colors for application page */
+  --heroclixbible-app-primary-color: #ed254e;
+  --heroclixbible-app-secondary-color: #9d7fa1;
+  --heroclixbible-app-primary-color-light: #ee8b98;
+
+  --heroclixbible-app-accentuation-color: #b86185;
+
+  /* global colors */
+  --placeholder-color: #9c888c;
+  --text-contrast: #bebebe;
+}
+
+/* general styles */
+html {
+  box-sizing: border-box;
+  background-color: #070a1c;
+  background-image: url("assets/background.png");
+  background-size: 15rem;
+  background-repeat: repeat;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html:after {
+  content: '';
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: center;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: 'bebas neue', cursive;
+
+}
+
+h2 {
+  font-family: 'fjalla one', sans-serif;
+}
+
+h3 {
+  font-family: 'roboto', sans-serif;
+}
+
+h4 {
+  font-family: 'bangers', cursive;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'roboto', sans-serif;
+}
+
+.app-root {
+  display: block;
+  min-height: 100%;
+}
+
+
+/*Heroes svg*/
+.heroes {
+  position: fixed;
+  height: 15rem;
+  width: auto;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

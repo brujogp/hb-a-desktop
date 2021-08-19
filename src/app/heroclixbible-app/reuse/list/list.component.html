@@ -1,0 +1,5 @@
+<div class="sections-container">
+  <div *ngFor="let sectionI of elementsListable; let i = index" [attr.data-index]="i"
+       class="section-item animate__animated animate__fadeIn" #item
+       (click)="clickedSection(i, item)"><img [src]="sectionI.iconURL" [alt]="sectionI.name"> {{sectionI.name}}</div>
+</div>

@@ -1,0 +1,7 @@
+<div class="content">
+  <app-nav-sections></app-nav-sections>
+  <h1 class="site-name">Heroclix Bible</h1>
+  <div [@triggerName]="prepareRouting(outlet)" class="router-outlet-container">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+</div>

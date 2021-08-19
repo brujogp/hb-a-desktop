@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  height: 100%;
+
+}
+
+app-show-hidden-button-pane {
+  position: absolute;
+  width: 100%;
+}
+
+.name-section {
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+}
+
+app-slide-indeces-subsections {
+  height: 90%;
+  background-color: #232933;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  border-radius: 2rem 2rem 0 0;
+  display: inline-block;
+  opacity: 0;
+}
